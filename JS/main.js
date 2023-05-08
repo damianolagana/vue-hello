@@ -5,7 +5,15 @@ createApp({
     data() {
       return {
         message: 'Benvenuto Utente',
-        source: 'https://unsplash.it/300/300?image'
+        nome: "",
+        cognome: "",
+        source: 'https://unsplash.it/300/300?image',
+        className: "invisible"
       }
+    },
+    methods: {
+        btnClick(){
+            this.className = "visible"
+        }
     }
 }).mount('#app')

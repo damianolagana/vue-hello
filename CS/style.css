@@ -17,3 +17,24 @@
     border-radius: 5%;
     padding: 15px;
 }
+
+.info{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+#btnClick{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

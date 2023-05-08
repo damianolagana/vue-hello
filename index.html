@@ -13,6 +13,24 @@
         <div id="container">
             <div id="messageBox">
                 <h1>{{message}}</h1>
+
+                <div class="info">
+                    <label for="">Name:</label>
+                    <input v-model="nome" placeholder="Inserisci il tuo nome">  
+                </div>
+                <div class="info">
+                    <label for="">Cognome:</label>
+                    <input v-model="cognome" placeholder="Inserisci il tuo cognome">  
+                </div>
+                <div :class="className">
+                    <p>Ciao {{nome}} {{cognome}}, l'immagine del giorno è:</p>
+                </div>
+                <div id="btnClick">
+                    <button @click="btnClick">Click</button>
+                </div>
+                
+                 
+
                 <img :src ="source" alt="">
             </div>
             
